@@ -96,6 +96,10 @@ int main(void){
     int number_of_students = 0;
     FILE* file;
     file = fopen("C:\\Users\\mihai\\Desktop\\progy\\data.txt", "r");
+    if (!file){
+        printf("Error: cannot open file\n");
+        exit(-4);
+    }
     while (fgets(scan_temp, sizeof(scan_temp), file) != NULL){
         number_of_students++;
     }
