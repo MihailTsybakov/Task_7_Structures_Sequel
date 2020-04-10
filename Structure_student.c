@@ -70,7 +70,7 @@ int Autotest(void){
     FILE* testfile;
     SStudent** test_student_array = NULL;
     SStudent temp_student;
-    testfile = fopen("C:\\Users\\mihai\\Desktop\\progy\\test.txt", "r");
+    testfile = fopen("test.txt", "r");
     test_student_array = (SStudent**)malloc(4*sizeof(SStudent*));
     for (int i = 0; i < 4; i++){
         Input(testfile, &temp_student);
@@ -95,7 +95,7 @@ int main(void){
     char scan_temp[256];
     int number_of_students = 0;
     FILE* file;
-    file = fopen("C:\\Users\\mihai\\Desktop\\progy\\data.txt", "r");
+    file = fopen("data.txt", "r");
     if (!file){
         printf("Error: cannot open file");
         exit(-4);
